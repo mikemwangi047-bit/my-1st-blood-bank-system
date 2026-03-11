@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Bank Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* HEADER */
+        .header {
+            background: #8b0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* LAYOUT */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 250px;
+            background: #b11226;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .sidebar a:hover {
+            background: #8b0000;
+        }
+
+        /* MAIN CONTENT */
+        .main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #8b0000;
+        }
+
+        .card p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #ddd;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        Blood Bank System Dashboard
+    </div>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <a href="#">Dashboard</a>
+            <a href="#">Register Donor</a>
+            <a href="#">View Donors</a>
+            <a href="#">Blood Stock</a>
+            <a href="#">Requests</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main">
+
+            <h2>Welcome to the Blood Bank Dashboard</h2>
+            <p>Monitor donors, blood stock, and requests in one place.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Donors</h3>
+                    <p>120</p>
+                </div>
+
+                <div class="card">
+                    <h3>Blood Units Available</h3>
+                    <p>85</p>
+                </div>
+
+                <div class="card">
+                    <h3>Pending Requests</h3>
+                    <p>14</p>
+                </div>
+
+                <div class="card">
+                    <h3>Hospitals Connected</h3>
+                    <p>6</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                © 2026 Blood Bank System | Saving Lives
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
