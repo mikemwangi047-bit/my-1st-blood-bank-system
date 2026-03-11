@@ -88,6 +88,7 @@ You should see the application homepage.
 📁 Folder Structure
 Typical structure (actual folders may vary):
 
+
 /blood-bank
 ├── css/
 ├── images/
@@ -99,6 +100,7 @@ Typical structure (actual folders may vary):
 ├── donor.php
 ├── receiver.php
 └── ...
+
 🧪 How to Use
 User Type	What You Can Do
 Donor	Register, login, update profile
